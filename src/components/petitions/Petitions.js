@@ -5,7 +5,7 @@ const baseUrl = process.env.REACT_APP_BASE_URL;
 async function GetPersonas() {
     try {
       const response = await axios({
-        url: `${baseUrl}/personas`,
+        url: `${baseUrl}/`,
         method: "GET"
       });
       return response.data;
@@ -18,7 +18,7 @@ async function GetPersonas() {
   async function PostPersonas() {
     try {
       const response = await axios({
-        url: `${baseUrl}/personas`,
+        url: `${baseUrl}/`,
         method: "POST"
       });
       return response.data;
